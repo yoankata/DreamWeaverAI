@@ -1,0 +1,11 @@
+numpy
+streamlit>=1.26.0
+sentence-transformers
+uvicorn
+python-box
+google-generativeai
+soundfile
+gtts
+streamlit_scrollable_textbox
+pyttsx3
+difflib
