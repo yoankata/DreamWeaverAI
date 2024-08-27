@@ -1,13 +1,16 @@
-# to run:
-# !streamlit run app.py &>/content/logs.txt &
+## to setup, create a virtual env and activate
+# python -m venv dw_venv
+#  .\dw_venv\Scripts\activate
 
-# 📦 Streamlit App Starter Kit 
-DreamWeaver.AI
-```
-⬆️ (Replace above with your app's name)
-```
+## install requirements
+# python -m pip install -r requirements.txt
 
-An AI sleep aid app.
+## to run:
+# python -m streamlit run app.py
+
+# 📦 DreamWeaver.AI Streamlit App Starter Kit 
+
+An AI sleep app.
 
 ## Demo App
 
