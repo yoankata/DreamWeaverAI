@@ -1,29 +1,57 @@
-## to setup, create a virtual env and activate
-# python -m venv dw_venv
-#  .\dw_venv\Scripts\activate
-
-## install requirements
-# python -m pip install -r requirements.txt
-
-## to run:
-# python -m streamlit run app.py
-
 # 📦 DreamWeaver.AI Streamlit App Starter Kit 
 
-An AI sleep app.
+An AI-powered sleep app.
+
+## Setup Instructions
+
+### 1. Create and Activate a Virtual Environment
+
+```bash
+python -m venv dw_venv
+```
+
+Activate the environment:
+
+- **Windows:**
+
+    ```bash
+    .\dw_venv\Scripts\activate
+    ```
+
+- **macOS/Linux:**
+
+    ```bash
+    source dw_venv/bin/activate
+    ```
+
+### 2. Install Requirements
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 3. Run the Application
+
+```bash
+python -m streamlit run app.py
+```
 
 ## Demo App
+
+Check out the live demo:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
 
 ## GitHub Codespaces
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+Launch this project in GitHub Codespaces:
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
 
 ## Further Reading
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+Explore more about this project:
+
+- [Resource 1](#)
+- [Resource 2](#)
+- [Resource 3](#)
