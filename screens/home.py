@@ -14,6 +14,7 @@ def app():
         max-width: 800px;  /* Adjust this value as needed */
         margin: 0 auto;
         display: block;
+        max-height: 100vh;  /* Adjusts the max height to fit the viewport height */
     }
     </style>
     """, unsafe_allow_html=True)
