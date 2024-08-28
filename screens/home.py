@@ -6,4 +6,4 @@ def app():
     st.title("Welcome to DreamWeaver AI")
     with open("videos/DreamWeaverAILogovideo.mp4", "rb") as video_file:
         video_bytes = video_file.read()
-    st.video(video_bytes, format="video/mp4", loop=True, autoplay=True, use_container_width=True)
+    st.video(video_bytes, format="video/mp4", loop=True, autoplay=True)
