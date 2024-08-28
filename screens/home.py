@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="DreamWeaver AI", page_icon=":flag-ee", layout="centered", initial_sidebar_state="auto")
+st.set_page_config(page_title="DreamWeaver AI", page_icon=":flag-ee:", layout="centered", initial_sidebar_state="auto")
 
 def app():
     st.title("Welcome to DreamWeaver AI")
