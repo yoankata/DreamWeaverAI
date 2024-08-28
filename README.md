@@ -1,6 +1,6 @@
 # 📦 DreamWeaver.AI Streamlit App Starter Kit
 
-An AI-powered sleep app designed to help you analyze and improve your sleep quality through advanced AI recommendations.
+An AI-powered sleep app designed to help you analyze and improve your sleep quality through advanced AI recommendations. https://dreamweaver-ai.streamlit.app/
 
 ## Setup Instructions
 
