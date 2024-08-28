@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-GOOGLE_API_KEY = "AIzaSyDZusS0lb_FowVv8ZDTWNqsbJo00g0_oiI"
+GOOGLE_API_KEY = st.secrets["general"]["GOOGLE_API_KEY"]
 MAIN_MODEL = 'gemini-pro'
 
 def getLLamaSleepscapeResponse(input_text, no_words, sleepscape_type):
