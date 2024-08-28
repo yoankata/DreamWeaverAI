@@ -1,5 +1,6 @@
 import plotly.graph_objs as go
-from utilz.mock_sleep_data import get_mock_sleep_data
+from utilz.mock_sleep_data import get_mock_sleep_data, get_last_night_sleep_duration
+
 
 def plot_sleep_duration_chart():
     current_data, projected_data = get_mock_sleep_data()
@@ -40,5 +41,24 @@ def plot_sleep_duration_chart():
         xaxis=dict(tickmode='array', tickvals=list(range(len(extended_days))), ticktext=extended_days),
         hovermode='x unified'
     )
+
+    return fig
+
+def plot_sleep_duration_chart():
+    sleep_duration = get_last_night_sleep_duration()
+
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=sleep_duration,
+        title={'text': "Sleep Duration (Hours)"},
+        gauge={
+            'axis': {'range': [0, 10]},
+            'bar': {'color': "darkblue"},
+            'steps': [
+                {'range': [0, 5], 'color': "lightgray"},
+                {'range': [5, 7], 'color': "gray"},
+                {'range': [7, 10], 'color': "green"}]
+        }
+    ))
 
     return fig

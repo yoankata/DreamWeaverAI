@@ -1,7 +1,7 @@
 import plotly.graph_objs as go
 
 def plot_sleep_efficiency_gauge():
-    sleep_efficiency = 85  # Mock data: 85% sleep efficiency
+    sleep_efficiency = 85
 
     fig = go.Figure(go.Indicator(
         mode = "gauge+number",
