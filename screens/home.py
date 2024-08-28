@@ -1,7 +1,8 @@
 import streamlit as st
 
 def app():
-    st.set_page_config(page_title="DreamWeaver AI", layout="centered", initial_sidebar_state="auto")
+    st.set_page_config(page_title="DreamWeaver AI" ,page_icon=None, layout="centered", initial_sidebar_state="auto")
+    DreamWeaver AI
     st.title("Welcome to DreamWeaver AI")
     video_file = open("videos/DreamWeaverAILogovideo.mp4", "rb")
     video_bytes = video_file.read()
