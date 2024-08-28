@@ -64,14 +64,29 @@ GOOGLE_API_KEY = "your_api_key"
 2. Click the **Create App** button on the top right.
 
 3. Choose **Yup, I have an app**.
+
 ![Deployment Step 1](docs/images/1.png)
 *Figure 1: Selecting the repository and branch.*
 
 4. Select the appropriate repository, branch, and starting script (`app.py`).
+
 ![Deployment Step 2](docs/images/2.png)
 *Figure 2: Reviewing deployment settings.*
 
 5. Your app will be deployed and accessible via a public URL.
+
+### Add your api keys or env variables
+
+6. On the list of apps level edit the app with hamburger menu.
+
+![Deployment Step 3](docs/images/3.png)
+*Figure 3: Reviewing deployment settings.*
+
+7. Update the values accordingly with your `secrets.toml` file
+
+![Deployment Step 4](docs/images/4.png)
+*Figure 4: Reviewing deployment settings.*
+
 
 ## GitHub Codespaces
 
