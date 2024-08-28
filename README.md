@@ -25,8 +25,19 @@ Activate the environment:
     ```bash
     source dw_venv/bin/activate
     ```
+### 2. Secrets Configuration
 
-### 2. Install Requirements
+## To get a google Gemini API key
+Go to https://aistudio.google.com/app/apikey, sign in with your google account and click 'Get API Key' -> 'Generate API Key'
+To keep your API keys and other sensitive information secure, add them to the `secrets.toml` file.
+
+## Example `secrets.toml` Configuration:**
+
+```toml
+[general]
+GOOGLE_API_KEY = "your_api_key"
+```
+### 3. Install Requirements
 
 Install the necessary dependencies:
 
@@ -34,23 +45,12 @@ Install the necessary dependencies:
 python -m pip install -r requirements.txt
 ```
 
-### 3. Run the Application
+### 4. Run the Application
 
 To start the application, run the following command:
 
 ```bash
 python -m streamlit run app.py
-```
-
-## Secrets Configuration
-
-To keep your API keys and other sensitive information secure, add them to the `secrets.toml` file.
-
-**Example `secrets.toml` Configuration:**
-
-```toml
-[general]
-GOOGLE_API_KEY = "your_api_key"
 ```
 
 ## Deployment
