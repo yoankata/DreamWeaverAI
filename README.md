@@ -50,7 +50,7 @@ python -m pip install -r requirements.txt
 To start the application, run the following command:
 
 ```bash
-python -m streamlit run app.py
+python -m streamlit run streamlit_app.py
 ```
 
 ## Deployment
