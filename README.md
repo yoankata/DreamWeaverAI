@@ -29,7 +29,7 @@ Activate the environment:
 
 ## To get a google Gemini API key
 Go to https://aistudio.google.com/app/apikey, sign in with your google account and click 'Get API Key' -> 'Generate API Key'
-To keep your API keys and other sensitive information secure, add them to the `secrets.toml` file.
+To keep your API keys and other sensitive information secure, add them to the `.streamlit/secrets.toml` file.
 
 ## Example `secrets.toml` Configuration:**
 
