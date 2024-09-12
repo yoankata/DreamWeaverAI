@@ -1,12 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="DreamWeaver AI", page_icon=":flag-ee:", layout="centered", initial_sidebar_state="auto")
 
 def app():
     st.write("<h1 style='text-align: center;'>Welcome to DreamWeaver AI</h1>", unsafe_allow_html=True)
     with open("videos/DreamWeaverAILogovideo.mp4", "rb") as video_file:
         video_bytes = video_file.read()
-    
+
     # CSS to adjust video size
     st.markdown("""
         <style>
