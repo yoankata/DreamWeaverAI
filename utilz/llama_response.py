@@ -59,3 +59,25 @@ def get_rag_response(query, extracted_text):
     """)
 
     return response.text
+
+
+def fridge_results(image_data:bytes|None = None) -> str:
+    """
+    Function to call to Google Gemini/Flash to
+
+    Assumes is based passed a bytes array or will fallback to a image
+    """
+    if image_data is None:
+        img = PIL.Image.open('./images/fullsizerender-287.jpg')
+    else:
+        img = PIL.Image.open(io.BytesIO(image_data))
+
+    # Generate content from an image and prompt
+    response = flash_model.generate_content([
+        "Based on the ingredients in the picture could you suggest 2 meal choices. Assume they also have rice, quinoa, seasonings, salt, pepper",
+       img
+    ], stream=True)
+
+    response.resolve()  # Wait for response
+
+    return response.text

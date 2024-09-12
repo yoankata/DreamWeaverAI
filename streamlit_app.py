@@ -1,5 +1,6 @@
 import streamlit as st
-from screens import home, generate_story, generate_noise, sleep_statistics, ai_recommendations, device_integration, today_statistics, rag_screen
+
+from screens import home, generate_story, generate_noise, sleep_statistics, ai_recommendations, device_integration, today_statistics, rag_screen, fridge_me
 
 st.set_page_config(page_title="DreamWeaver AI", page_icon='💤', layout='wide')
 
@@ -11,7 +12,8 @@ PAGES = {
     "Insights": sleep_statistics,
     "AI Recommendations": ai_recommendations,
     "Devices": device_integration,
-    "Retrieval-Augmented Generation": rag_screen
+    "Retrieval-Augmented Generation": rag_screen,
+    "Search Fridge": fridge_me
 }
 
 st.sidebar.title('Navigation')
